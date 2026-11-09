@@ -1,28 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="100%" height="420">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#020409"/>
-      <stop offset="100%" stop-color="#06091a"/>
+      <stop offset="0%" stop-color="#050814"/>
+      <stop offset="100%" stop-color="#020409"/>
     </linearGradient>
     <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0d1526" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#070d1e" stop-opacity="0.9"/>
+      <stop offset="0%" stop-color="#0d1526" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#070d1e" stop-opacity="0.95"/>
     </linearGradient>
     <linearGradient id="indigo" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#6366f1"/>
       <stop offset="100%" stop-color="#8b5cf6"/>
     </linearGradient>
     <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="0%" stop-color="#00f5ff"/>
       <stop offset="100%" stop-color="#0ea5e9"/>
     </linearGradient>
     <linearGradient id="rose" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#f43f5e"/>
       <stop offset="100%" stop-color="#fb923c"/>
-    </linearGradient>
-    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#22c55e"/>
-      <stop offset="100%" stop-color="#10b981"/>
     </linearGradient>
     <linearGradient id="amber" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#f59e0b"/>
@@ -36,174 +32,146 @@
       <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="2s" repeatCount="indefinite"/>
     </linearGradient>
     <radialGradient id="glow1" cx="25%" cy="50%" r="40%">
-      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.1"/>
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.12"/>
       <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="glow2" cx="75%" cy="50%" r="40%">
-      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.08"/>
-      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#00f5ff" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#00f5ff" stop-opacity="0"/>
     </radialGradient>
   </defs>
 
-  <style>
-    @keyframes slideUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes growW {
-      from { width: 0; }
-    }
-    @keyframes pulse {
-      0%,100% { opacity: 0.5; }
-      50%     { opacity: 1; }
-    }
-    .c1 { animation: slideUp 0.6s cubic-bezier(0.16,1,0.3,1) 0.1s both; }
-    .c2 { animation: slideUp 0.6s cubic-bezier(0.16,1,0.3,1) 0.25s both; }
-    .c3 { animation: slideUp 0.6s cubic-bezier(0.16,1,0.3,1) 0.4s both; }
-    .c4 { animation: slideUp 0.6s cubic-bezier(0.16,1,0.3,1) 0.55s both; }
-    .bar { animation: growW 1.2s cubic-bezier(0.16,1,0.3,1) both; }
-    .bar1 { animation-delay: 0.6s; }
-    .bar2 { animation-delay: 0.75s; }
-    .bar3 { animation-delay: 0.9s; }
-    .bar4 { animation-delay: 1.05s; }
-    .dot  { animation: pulse 2s ease-in-out infinite; }
-  </style>
-
   <!-- Background -->
-  <rect width="880" height="420" fill="url(#bg)"/>
-  <rect width="880" height="420" fill="url(#glow1)"/>
-  <rect width="880" height="420" fill="url(#glow2)"/>
+  <rect width="900" height="420" fill="url(#bg)"/>
+  <rect width="900" height="420" fill="url(#glow1)"/>
+  <rect width="900" height="420" fill="url(#glow2)"/>
 
-  <!-- Section header -->
-  <text x="440" y="36" text-anchor="middle"
-        font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif"
-        font-size="13" fill="#475569" letter-spacing="4">— FEATURED PROJECTS —</text>
+  <!-- Section Header -->
+  <text x="450" y="32" text-anchor="middle"
+        font-family="'Courier New', Courier, monospace"
+        font-size="12" font-weight="700" fill="#64748b" letter-spacing="3">// FEATURED_SYSTEMS</text>
 
   <!-- ══════════════════════════════════════════════
-       CARD 1: SignGesture AI  (top-left: x=16,y=52, w=418, h=170)
+       CARD 1: SignGesture AI  (top-left: x=20,y=48, w=420, h=170)
   ══════════════════════════════════════════════ -->
-  <g class="c1" opacity="0">
-    <rect x="16" y="52" width="418" height="170" rx="12" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1"/>
-    <rect x="16" y="52" width="418" height="3" rx="12" fill="url(#indigo)"/>
-    <!-- Card top accent bar -->
-    <rect x="16" y="55" width="418" height="1" fill="url(#indigo)" opacity="0.3"/>
+  <g transform="translate(20, 48)">
+    <rect x="0" y="0" width="420" height="170" rx="12" fill="url(#cardBg)" stroke="#6366f1" stroke-width="1.2"/>
+    <rect x="0" y="0" width="420" height="3" rx="12" fill="url(#indigo)"/>
 
-    <!-- Icon area -->
-    <rect x="30" y="68" width="36" height="36" rx="8" fill="#6366f1" fill-opacity="0.15" stroke="#6366f1" stroke-width="0.5" stroke-opacity="0.4"/>
-    <text x="48" y="90" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" text-anchor="middle">🤟</text>
+    <!-- Icon Area -->
+    <rect x="18" y="18" width="38" height="38" rx="8" fill="#6366f1" fill-opacity="0.18" stroke="#6366f1" stroke-width="0.8"/>
+    <text x="37" y="43" font-family="-apple-system, sans-serif" font-size="20" text-anchor="middle">🤟</text>
 
-    <!-- Title -->
-    <text x="76" y="78" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#e2e8f0">SignGesture AI</text>
-    <text x="76" y="96" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#475569">Python · OpenCV · MediaPipe · Scikit-learn</text>
+    <!-- Title & Stack -->
+    <text x="68" y="32" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="800" fill="#ffffff">SignGesture AI</text>
+    <text x="68" y="50" font-family="'Courier New', Courier, monospace" font-size="10.5" font-weight="600" fill="#818cf8">Python · OpenCV · MediaPipe · Scikit</text>
 
     <!-- Description -->
-    <text x="30" y="120" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#94a3b8">Real-time ASL sign language recognition with two-way</text>
-    <text x="30" y="136" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#94a3b8">translation bridge and offline TTS capability</text>
+    <text x="18" y="78" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11.5" fill="#94a3b8">Two-way real-time ASL translation with 21 hand landmarks</text>
+    <text x="18" y="96" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11.5" fill="#94a3b8">and high-performance offline speech synthesis</text>
 
-    <!-- Accuracy bar -->
-    <text x="30" y="158" font-family="Courier New,Courier,monospace" font-size="10" fill="#6366f1">ML Accuracy</text>
-    <text x="400" y="158" text-anchor="end" font-family="Courier New,Courier,monospace" font-size="10" fill="#a5b4fc" font-weight="700">99.73%</text>
-    <rect x="30" y="162" width="380" height="5" rx="2.5" fill="#1e293b"/>
-    <rect x="30" y="162" width="379" height="5" rx="2.5" fill="url(#indigo)" class="bar bar1">
-      <animate attributeName="width" from="0" to="379" dur="1.2s" begin="0.6s" fill="freeze"/>
+    <!-- Accuracy Bar -->
+    <text x="18" y="126" font-family="'Courier New', Courier, monospace" font-size="10.5" font-weight="700" fill="#818cf8">ML Accuracy</text>
+    <text x="402" y="126" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="11" font-weight="800" fill="#c7d2fe">99.73%</text>
+    <rect x="18" y="132" width="384" height="7" rx="3.5" fill="#1e293b"/>
+    <rect x="18" y="132" width="383" height="7" rx="3.5" fill="url(#indigo)">
+      <animate attributeName="width" from="0" to="383" dur="1.2s" begin="0.2s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
-    <rect x="30" y="162" width="379" height="5" rx="2.5" fill="url(#shimmer)" opacity="0.6"/>
+    <rect x="18" y="132" width="383" height="7" rx="3.5" fill="url(#shimmer)"/>
 
-    <!-- Link arrow -->
-    <text x="400" y="92" text-anchor="end" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#6366f1">↗ View</text>
+    <text x="402" y="35" text-anchor="end" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#818cf8">↗ Inspect</text>
   </g>
 
   <!-- ══════════════════════════════════════════════
-       CARD 2: Decentralized KYC  (top-right: x=450,y=52, w=414, h=170)
+       CARD 2: Decentralized KYC  (top-right: x=460,y=48, w=420, h=170)
   ══════════════════════════════════════════════ -->
-  <g class="c2" opacity="0">
-    <rect x="450" y="52" width="414" height="170" rx="12" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1"/>
-    <rect x="450" y="52" width="414" height="3" rx="12" fill="url(#cyan)"/>
+  <g transform="translate(460, 48)">
+    <rect x="0" y="0" width="420" height="170" rx="12" fill="url(#cardBg)" stroke="#00f5ff" stroke-width="1.2"/>
+    <rect x="0" y="0" width="420" height="3" rx="12" fill="url(#cyan)"/>
 
-    <!-- Icon area -->
-    <rect x="464" y="68" width="36" height="36" rx="8" fill="#06b6d4" fill-opacity="0.12" stroke="#06b6d4" stroke-width="0.5" stroke-opacity="0.4"/>
-    <text x="482" y="90" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" text-anchor="middle">🔐</text>
+    <!-- Icon Area -->
+    <rect x="18" y="18" width="38" height="38" rx="8" fill="#00f5ff" fill-opacity="0.15" stroke="#00f5ff" stroke-width="0.8"/>
+    <text x="37" y="43" font-family="-apple-system, sans-serif" font-size="20" text-anchor="middle">🔐</text>
 
-    <!-- Title -->
-    <text x="510" y="78" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#e2e8f0">Decentralized KYC</text>
-    <text x="510" y="96" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#475569">Solidity · Ethereum · Web3.js · Smart Contracts</text>
+    <!-- Title & Stack -->
+    <text x="68" y="32" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="800" fill="#ffffff">Decentralized KYC</text>
+    <text x="68" y="50" font-family="'Courier New', Courier, monospace" font-size="10.5" font-weight="600" fill="#38bdf8">Solidity · Ethereum · Web3.js · Stacks</text>
 
     <!-- Description -->
-    <text x="464" y="120" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#94a3b8">Tamper-proof on-chain identity system eliminating</text>
-    <text x="464" y="136" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#94a3b8">single-point-of-failure from KYC verification</text>
+    <text x="18" y="78" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11.5" fill="#94a3b8">Tamper-proof on-chain identity validation eliminating</text>
+    <text x="18" y="96" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11.5" fill="#94a3b8">single-point vulnerabilities in financial institutions</text>
 
-    <!-- Security bar -->
-    <text x="464" y="158" font-family="Courier New,Courier,monospace" font-size="10" fill="#06b6d4">Security Level</text>
-    <text x="834" y="158" text-anchor="end" font-family="Courier New,Courier,monospace" font-size="10" fill="#67e8f9" font-weight="700">On-Chain</text>
-    <rect x="464" y="162" width="376" height="5" rx="2.5" fill="#1e293b"/>
-    <rect x="464" y="162" width="376" height="5" rx="2.5" fill="url(#cyan)" class="bar bar2">
-      <animate attributeName="width" from="0" to="376" dur="1.2s" begin="0.75s" fill="freeze"/>
+    <!-- Security Level Bar -->
+    <text x="18" y="126" font-family="'Courier New', Courier, monospace" font-size="10.5" font-weight="700" fill="#00f5ff">Security Protocol</text>
+    <text x="402" y="126" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="11" font-weight="800" fill="#67e8f9">ON-CHAIN</text>
+    <rect x="18" y="132" width="384" height="7" rx="3.5" fill="#1e293b"/>
+    <rect x="18" y="132" width="384" height="7" rx="3.5" fill="url(#cyan)">
+      <animate attributeName="width" from="0" to="384" dur="1.2s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
+    <rect x="18" y="132" width="384" height="7" rx="3.5" fill="url(#shimmer)"/>
 
-    <!-- Link arrow -->
-    <text x="834" y="92" text-anchor="end" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#06b6d4">↗ View</text>
+    <text x="402" y="35" text-anchor="end" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#00f5ff">↗ Inspect</text>
   </g>
 
   <!-- ══════════════════════════════════════════════
-       CARD 3: GFG 160-Day DSA  (bottom-left: x=16,y=240, w=418, h=165)
+       CARD 3: GFG 160-Day DSA  (bottom-left: x=20,y=232, w=420, h=165)
   ══════════════════════════════════════════════ -->
-  <g class="c3" opacity="0">
-    <rect x="16" y="240" width="418" height="165" rx="12" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1"/>
-    <rect x="16" y="240" width="418" height="3" rx="12" fill="url(#rose)"/>
+  <g transform="translate(20, 232)">
+    <rect x="0" y="0" width="420" height="165" rx="12" fill="url(#cardBg)" stroke="#f43f5e" stroke-width="1.2"/>
+    <rect x="0" y="0" width="420" height="3" rx="12" fill="url(#rose)"/>
 
-    <!-- Icon area -->
-    <rect x="30" y="256" width="36" height="36" rx="8" fill="#f43f5e" fill-opacity="0.12" stroke="#f43f5e" stroke-width="0.5" stroke-opacity="0.4"/>
-    <text x="48" y="278" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" text-anchor="middle">⚡</text>
+    <!-- Icon Area -->
+    <rect x="18" y="16" width="38" height="38" rx="8" fill="#f43f5e" fill-opacity="0.15" stroke="#f43f5e" stroke-width="0.8"/>
+    <text x="37" y="41" font-family="-apple-system, sans-serif" font-size="20" text-anchor="middle">⚡</text>
 
-    <!-- Title -->
-    <text x="76" y="266" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#e2e8f0">GFG 160-Day DSA</text>
-    <text x="76" y="284" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#475569">C++ · Algorithms · Graphs · DP · Trees</text>
+    <!-- Title & Stack -->
+    <text x="68" y="30" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="800" fill="#ffffff">GFG 160-Day DSA</text>
+    <text x="68" y="48" font-family="'Courier New', Courier, monospace" font-size="10.5" font-weight="600" fill="#fb7185">C++ · Graph Theory · DP · Trees</text>
 
     <!-- Description -->
-    <text x="30" y="308" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#94a3b8">160-day intensive challenge: graphs, dynamic programming,</text>
-    <text x="30" y="324" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#94a3b8">tree traversal, greedy and divide-and-conquer algorithms</text>
+    <text x="18" y="74" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11.5" fill="#94a3b8">160-day sprint mastering competitive algorithmic puzzles,</text>
+    <text x="18" y="92" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11.5" fill="#94a3b8">dynamic programming optimization, and memory efficiency</text>
 
-    <!-- Progress bar -->
-    <text x="30" y="348" font-family="Courier New,Courier,monospace" font-size="10" fill="#f43f5e">Progress</text>
-    <text x="400" y="348" text-anchor="end" font-family="Courier New,Courier,monospace" font-size="10" fill="#fb7185" font-weight="700">160 Days</text>
-    <rect x="30" y="352" width="380" height="5" rx="2.5" fill="#1e293b"/>
-    <rect x="30" y="352" width="380" height="5" rx="2.5" fill="url(#rose)" class="bar bar3">
-      <animate attributeName="width" from="0" to="380" dur="1.2s" begin="0.9s" fill="freeze"/>
+    <!-- Progress Bar -->
+    <text x="18" y="122" font-family="'Courier New', Courier, monospace" font-size="10.5" font-weight="700" fill="#f43f5e">Sprint Completion</text>
+    <text x="402" y="122" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="11" font-weight="800" fill="#fda4af">160 DAYS</text>
+    <rect x="18" y="128" width="384" height="7" rx="3.5" fill="#1e293b"/>
+    <rect x="18" y="128" width="384" height="7" rx="3.5" fill="url(#rose)">
+      <animate attributeName="width" from="0" to="384" dur="1.2s" begin="0.4s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
+    <rect x="18" y="128" width="384" height="7" rx="3.5" fill="url(#shimmer)"/>
 
-    <text x="400" y="284" text-anchor="end" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#f43f5e">↗ View</text>
+    <text x="402" y="33" text-anchor="end" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#f43f5e">↗ Inspect</text>
   </g>
 
   <!-- ══════════════════════════════════════════════
-       CARD 4: E-Commerce + NFT Manager  (bottom-right: x=450,y=240, w=414, h=165)
+       CARD 4: E-Commerce UI + NFT Manager (bottom-right: x=460,y=232, w=420, h=165)
   ══════════════════════════════════════════════ -->
-  <g class="c4" opacity="0">
-    <rect x="450" y="240" width="414" height="165" rx="12" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1"/>
-    <rect x="450" y="240" width="414" height="3" rx="12" fill="url(#amber)"/>
+  <g transform="translate(460, 232)">
+    <rect x="0" y="0" width="420" height="165" rx="12" fill="url(#cardBg)" stroke="#f59e0b" stroke-width="1.2"/>
+    <rect x="0" y="0" width="420" height="3" rx="12" fill="url(#amber)"/>
 
-    <!-- Icon area -->
-    <rect x="464" y="256" width="36" height="36" rx="8" fill="#f59e0b" fill-opacity="0.12" stroke="#f59e0b" stroke-width="0.5" stroke-opacity="0.4"/>
-    <text x="482" y="278" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" text-anchor="middle">🛒</text>
+    <!-- Icon Area -->
+    <rect x="18" y="16" width="38" height="38" rx="8" fill="#f59e0b" fill-opacity="0.15" stroke="#f59e0b" stroke-width="0.8"/>
+    <text x="37" y="41" font-family="-apple-system, sans-serif" font-size="20" text-anchor="middle">🛒</text>
 
-    <!-- Title -->
-    <text x="510" y="266" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="15" font-weight="700" fill="#e2e8f0">E-Commerce UI</text>
-    <text x="510" y="284" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#475569">JavaScript · HTML · CSS · Responsive Design</text>
+    <!-- Title & Stack -->
+    <text x="68" y="30" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="16" font-weight="800" fill="#ffffff">E-Commerce Web Suite</text>
+    <text x="68" y="48" font-family="'Courier New', Courier, monospace" font-size="10.5" font-weight="600" fill="#fbbf24">JavaScript · HTML5 · CSS3 · Responsive UI</text>
 
     <!-- Description -->
-    <text x="464" y="308" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#94a3b8">Amazon-style responsive storefront with dynamic cart,</text>
-    <text x="464" y="324" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#94a3b8">product filtering, and seamless checkout flow</text>
+    <text x="18" y="74" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11.5" fill="#94a3b8">Interactive Amazon-style storefront with real-time cart,</text>
+    <text x="18" y="92" font-family="-apple-system, 'Segoe UI', sans-serif" font-size="11.5" fill="#94a3b8">instant catalog search, and smooth modular design</text>
 
-    <!-- Progress bar -->
-    <text x="464" y="348" font-family="Courier New,Courier,monospace" font-size="10" fill="#f59e0b">Completion</text>
-    <text x="834" y="348" text-anchor="end" font-family="Courier New,Courier,monospace" font-size="10" fill="#fcd34d" font-weight="700">100%</text>
-    <rect x="464" y="352" width="376" height="5" rx="2.5" fill="#1e293b"/>
-    <rect x="464" y="352" width="376" height="5" rx="2.5" fill="url(#amber)" class="bar bar4">
-      <animate attributeName="width" from="0" to="376" dur="1.2s" begin="1.05s" fill="freeze"/>
+    <!-- Progress Bar -->
+    <text x="18" y="122" font-family="'Courier New', Courier, monospace" font-size="10.5" font-weight="700" fill="#f59e0b">Build Status</text>
+    <text x="402" y="122" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="11" font-weight="800" fill="#fde68a">SHIPPED</text>
+    <rect x="18" y="128" width="384" height="7" rx="3.5" fill="#1e293b"/>
+    <rect x="18" y="128" width="384" height="7" rx="3.5" fill="url(#amber)">
+      <animate attributeName="width" from="0" to="384" dur="1.2s" begin="0.5s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
     </rect>
+    <rect x="18" y="128" width="384" height="7" rx="3.5" fill="url(#shimmer)"/>
 
-    <text x="834" y="284" text-anchor="end" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="11" fill="#f59e0b">↗ View</text>
+    <text x="402" y="33" text-anchor="end" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" fill="#f59e0b">↗ Inspect</text>
   </g>
-
-  <!-- Bottom fade -->
-  <rect x="0" y="395" width="880" height="25" fill="url(#bg)" opacity="0.8"/>
 </svg>
