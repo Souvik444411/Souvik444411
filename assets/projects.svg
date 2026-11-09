@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 200" width="100%" height="200">
+  <defs>
+    <!-- Card Gradients -->
+    <linearGradient id="cardBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14192b"/>
+      <stop offset="100%" stop-color="#090d18"/>
+    </linearGradient>
+    <linearGradient id="cardBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#19132d"/>
+      <stop offset="100%" stop-color="#0a0818"/>
+    </linearGradient>
+    <linearGradient id="cardBg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1124"/>
+      <stop offset="100%" stop-color="#0d0712"/>
+    </linearGradient>
+
+    <!-- Border Glow Filters -->
+    <filter id="borderGlowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .proj-card {
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+  </style>
+
+  <!-- CARD 1: SignGesture AI (Left) -->
+  <g class="proj-card" transform="translate(0, 0)">
+    <!-- Card Base -->
+    <rect x="2" y="2" width="280" height="194" rx="14" fill="url(#cardBg1)" stroke="#00f2fe" stroke-width="1.3" opacity="0.95"/>
+    <!-- Top Tag -->
+    <g transform="translate(20, 30)">
+      <circle cx="0" cy="-4" r="3.5" fill="#00ffcc"/>
+      <text x="10" y="0" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#00ffcc" letter-spacing="1">
+        FLAGSHIP AI CORE
+      </text>
+    </g>
+    <!-- Project Title -->
+    <text x="20" y="70" font-family="'Montserrat', 'Inter', sans-serif" font-size="20" font-weight="800" fill="#ffffff" letter-spacing="0.5">
+      SignGesture AI
+    </text>
+    <!-- Description -->
+    <text x="20" y="96" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8" font-weight="400">
+      <tspan x="20" dy="0">Two-way real-time sign recognition</tspan>
+      <tspan x="20" dy="16">system with 99.73% ML accuracy,</tspan>
+      <tspan x="20" dy="16">21-landmark tracking &amp; offline TTS.</tspan>
+    </text>
+    <!-- Footer Link -->
+    <g transform="translate(20, 168)">
+      <text font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#00f2fe">
+        SIGN-LANGUAGE-DEC <tspan fill="#38ef7d">↗</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- CARD 2: Decentralized KYC (Center) -->
+  <g class="proj-card" transform="translate(300, 0)">
+    <!-- Card Base -->
+    <rect x="2" y="2" width="280" height="194" rx="14" fill="url(#cardBg2)" stroke="#7928ca" stroke-width="1.3" opacity="0.95"/>
+    <!-- Top Tag -->
+    <g transform="translate(20, 30)">
+      <circle cx="0" cy="-4" r="3.5" fill="#bd93f9"/>
+      <text x="10" y="0" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#bd93f9" letter-spacing="1">
+        WEB3 &amp; BLOCKCHAIN
+      </text>
+    </g>
+    <!-- Project Title -->
+    <text x="20" y="70" font-family="'Montserrat', 'Inter', sans-serif" font-size="20" font-weight="800" fill="#ffffff" letter-spacing="0.5">
+      Decentralized KYC
+    </text>
+    <!-- Description -->
+    <text x="20" y="96" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8" font-weight="400">
+      <tspan x="20" dy="0">Tamper-proof customer identity</tspan>
+      <tspan x="20" dy="16">verification using Solidity smart</tspan>
+      <tspan x="20" dy="16">contracts and decentralized storage.</tspan>
+    </text>
+    <!-- Footer Link -->
+    <g transform="translate(20, 168)">
+      <text font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#bd93f9">
+        Decentralized-KYC <tspan fill="#ff79c6">↗</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- CARD 3: GFG 160-Day Challenge (Right) -->
+  <g class="proj-card" transform="translate(600, 0)">
+    <!-- Card Base -->
+    <rect x="2" y="2" width="276" height="194" rx="14" fill="url(#cardBg3)" stroke="#ff007f" stroke-width="1.3" opacity="0.95"/>
+    <!-- Top Tag -->
+    <g transform="translate(20, 30)">
+      <circle cx="0" cy="-4" r="3.5" fill="#ff007f"/>
+      <text x="10" y="0" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#ff007f" letter-spacing="1">
+        ALGORITHMIC MASTERY
+      </text>
+    </g>
+    <!-- Project Title -->
+    <text x="20" y="70" font-family="'Montserrat', 'Inter', sans-serif" font-size="20" font-weight="800" fill="#ffffff" letter-spacing="0.5">
+      GFG 160 Challenge
+    </text>
+    <!-- Description -->
+    <text x="20" y="96" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8" font-weight="400">
+      <tspan x="20" dy="0">160-day intensive journey</tspan>
+      <tspan x="20" dy="16">mastering advanced data structures,</tspan>
+      <tspan x="20" dy="16">graph algorithms &amp; problem-solving.</tspan>
+    </text>
+    <!-- Footer Link -->
+    <g transform="translate(20, 168)">
+      <text font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" fill="#ff007f">
+        GFC-160-Challenge <tspan fill="#00ffcc">↗</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

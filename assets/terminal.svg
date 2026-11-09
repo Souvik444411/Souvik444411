@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 530" width="100%" height="530">
+  <defs>
+    <!-- Terminal Background -->
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f1a"/>
+      <stop offset="50%" stop-color="#080c16"/>
+      <stop offset="100%" stop-color="#05070d"/>
+    </linearGradient>
+
+    <!-- Header Bar Gradient -->
+    <linearGradient id="headerBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#151d30"/>
+      <stop offset="100%" stop-color="#101726"/>
+    </linearGradient>
+
+    <!-- Progress Bar Gradient 1 -->
+    <linearGradient id="progressGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="50%" stop-color="#7928ca"/>
+      <stop offset="100%" stop-color="#ff007f"/>
+    </linearGradient>
+
+    <!-- Progress Bar Gradient 2 -->
+    <linearGradient id="progressGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#38ef7d"/>
+    </linearGradient>
+
+    <!-- Subtle Glow Filter -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes blinkCursor {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    @keyframes barShimmer {
+      0% { filter: drop-shadow(0 0 2px #00f2fe); }
+      50% { filter: drop-shadow(0 0 7px #ff007f); }
+      100% { filter: drop-shadow(0 0 2px #00f2fe); }
+    }
+    .cursor {
+      animation: blinkCursor 1s infinite;
+      fill: #00ffcc;
+    }
+    .status-bar-1 {
+      animation: barShimmer 4s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Terminal Window Outer Container -->
+  <rect x="2" y="2" width="486" height="526" rx="14" fill="url(#termBg)" stroke="#1e293b" stroke-width="1.2"/>
+  <rect x="3" y="3" width="484" height="524" rx="13" fill="none" stroke="#00f2fe" stroke-width="1" opacity="0.3"/>
+
+  <!-- Title Bar -->
+  <path d="M 3 3 L 487 3 A 13 13 0 0 1 487 36 L 3 36 A 13 13 0 0 1 3 3 Z" fill="url(#headerBar)"/>
+  <line x1="3" y1="36" x2="487" y2="36" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Traffic Light Window Buttons -->
+  <circle cx="22" cy="19" r="6" fill="#ff5f56"/>
+  <circle cx="42" cy="19" r="6" fill="#ffbd2e"/>
+  <circle cx="62" cy="19" r="6" fill="#27c93f"/>
+
+  <!-- Window Title -->
+  <text x="460" y="23" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="500" fill="#64748b">
+    souvik@github: ~ - zsh
+  </text>
+
+  <!-- Terminal Content Body -->
+  <g transform="translate(24, 62)" font-family="'JetBrains Mono', 'Fira Code', monospace">
+    <!-- Command Prompt -->
+    <text x="0" y="0" font-size="12.5" font-weight="700" fill="#00f2fe">
+      &gt; neofetch --profile
+    </text>
+
+    <!-- User Header Underlined -->
+    <text x="0" y="22" font-size="12" font-weight="700" fill="#38ef7d">
+      souvik@github
+    </text>
+    <line x1="0" y1="26" x2="105" y2="26" stroke="#38ef7d" stroke-width="1.2"/>
+
+    <!-- Neofetch Spec List -->
+    <g transform="translate(0, 44)" font-size="11" font-weight="400">
+      <!-- Row 1: OS -->
+      <text x="0" y="0" fill="#94a3b8">OS ...............</text>
+      <text x="135" y="0" fill="#e2e8f0" font-weight="600">Linux / Windows 11</text>
+
+      <!-- Row 2: Host -->
+      <text x="0" y="16" fill="#94a3b8">Host .............</text>
+      <text x="135" y="16" fill="#00f2fe">github.com/Souvik444411</text>
+
+      <!-- Row 3: Kernel -->
+      <text x="0" y="32" fill="#94a3b8">Kernel ...........</text>
+      <text x="135" y="32" fill="#e2e8f0">Neural-Vision-v2.0</text>
+
+      <!-- Row 4: Runtime -->
+      <text x="0" y="48" fill="#94a3b8">Runtime ..........</text>
+      <text x="135" y="48" fill="#ff79c6">Python / C++ / TypeScript</text>
+
+      <!-- Row 5: IDE -->
+      <text x="0" y="64" fill="#94a3b8">IDE ..............</text>
+      <text x="135" y="64" fill="#e2e8f0">VS Code / PyCharm / Neovim</text>
+    </g>
+
+    <!-- CAPABILITIES Header -->
+    <g transform="translate(0, 134)">
+      <text x="0" y="0" font-size="11" font-weight="800" fill="#b026ff" letter-spacing="1">
+        CAPABILITIES
+      </text>
+
+      <g transform="translate(0, 18)" font-size="10.5">
+        <text x="0" y="0" fill="#94a3b8">Languages ........</text>
+        <text x="135" y="0" fill="#f8fafc" font-weight="600">Python / C++ / JavaScript / C / SQL</text>
+
+        <text x="0" y="15" fill="#94a3b8">AI &amp; Vision ......</text>
+        <text x="135" y="15" fill="#00ffcc" font-weight="600">OpenCV / MediaPipe / PyTorch / Scikit</text>
+
+        <text x="0" y="30" fill="#94a3b8">Web &amp; Backend ....</text>
+        <text x="135" y="30" fill="#f8fafc">React / Next.js / FastAPI / Node / Express</text>
+
+        <text x="0" y="45" fill="#94a3b8">Web3 .............</text>
+        <text x="135" y="45" fill="#f8fafc">Solidity / Smart Contracts / Ethereum</text>
+
+        <text x="0" y="60" fill="#94a3b8">Databases ........</text>
+        <text x="135" y="60" fill="#f8fafc">PostgreSQL / MongoDB / Supabase</text>
+
+        <text x="0" y="75" fill="#94a3b8">Tools ............</text>
+        <text x="135" y="75" fill="#f8fafc">Git / GitHub Actions / Linux / Postman</text>
+      </g>
+    </g>
+
+    <!-- INTERESTS Header -->
+    <g transform="translate(0, 248)">
+      <text x="0" y="0" font-size="11" font-weight="800" fill="#ff007f" letter-spacing="1">
+        INTERESTS
+      </text>
+
+      <g transform="translate(0, 18)" font-size="10.5" fill="#cbd5e1">
+        <text x="0" y="0"><tspan fill="#ff007f">&gt;</tspan> Assistive Tech &amp; Real-Time Computer Vision</text>
+        <text x="0" y="15"><tspan fill="#ff007f">&gt;</tspan> 3D Skeleton Gesture Recognition (99.7% ML)</text>
+        <text x="0" y="30"><tspan fill="#ff007f">&gt;</tspan> Autonomous AI Agents &amp; Generative LLMs</text>
+        <text x="0" y="45"><tspan fill="#ff007f">&gt;</tspan> Cracking Algorithms (GFG 160-Day Challenge)</text>
+      </g>
+    </g>
+
+    <!-- Live Status & Shimmering Progress Bars -->
+    <g transform="translate(0, 334)">
+      <!-- Status 1 -->
+      <text x="0" y="0" font-size="10.5" font-weight="700" fill="#e2e8f0">
+        STATUS: CODING &amp; TRAINING
+      </text>
+      <circle cx="165" cy="-3.5" r="3.5" fill="#38ef7d"/>
+      <text x="440" y="0" text-anchor="end" font-size="10" font-weight="600" fill="#00f2fe">
+        88%
+      </text>
+      <!-- Progress Bar Background & Fill -->
+      <rect x="0" y="8" width="440" height="10" rx="5" fill="#131b2e"/>
+      <rect class="status-bar-1" x="0" y="8" width="387" height="10" rx="5" fill="url(#progressGrad1)"/>
+
+      <!-- Status 2 -->
+      <text x="0" y="36" font-size="10.5" font-weight="700" fill="#e2e8f0">
+        LEARNING DAILY &amp; RESEARCH
+      </text>
+      <text x="440" y="36" text-anchor="end" font-size="10" font-weight="600" fill="#38ef7d">
+        95%
+      </text>
+      <rect x="0" y="44" width="440" height="10" rx="5" fill="#131b2e"/>
+      <rect x="0" y="44" width="418" height="10" rx="5" fill="url(#progressGrad2)"/>
+    </g>
+
+    <!-- Blinking Cursor Prompt Line -->
+    <g transform="translate(0, 426)">
+      <text x="0" y="0" font-size="14" font-weight="700" fill="#00ffcc">
+        &gt;
+      </text>
+      <rect class="cursor" x="14" y="-12" width="8" height="15" rx="1"/>
+    </g>
+  </g>
+</svg>
