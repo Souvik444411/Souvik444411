@@ -1,221 +1,237 @@
 <div align="center">
 
-<!-- ==================== HEADER BANNER ==================== -->
-<img src="assets/header.svg" width="100%" alt="Souvik Chowdhury - Cyberpunk Header Banner" />
+<!--
+  ██████████████████████████████████████████████████████
+  ██   SOUVIK CHOWDHURY — @Souvik444411                ██
+  ██   Profile README — Rebuilt from scratch           ██
+  ██████████████████████████████████████████████████████
+-->
 
-<br/><br/>
+<!-- ══════════════════════════════════════════════════════
+     HERO — Typing code animation + Deep space identity
+══════════════════════════════════════════════════════ -->
+<img src="assets/hero.svg" width="100%" alt="Hero Banner" />
 
-<!-- ==================== DUAL CARDS: PROFILE HUD & TERMINAL ==================== -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tr valign="top">
-    <td width="44%" align="center">
-      <img src="assets/profile-card.svg" width="100%" alt="Holographic Scanning Profile Card" />
-    </td>
-    <td width="56%" align="center">
-      <img src="assets/terminal.svg" width="100%" alt="Terminal Neofetch Card" />
-      <br/>
-      <a href="https://github.com/Souvik444411">
-        <img src="https://komarev.com/ghpvc/?username=Souvik444411&color=00f2fe&style=flat-square&label=PROFILE+VIEWS" alt="Profile Views Counter" />
-      </a>
-    </td>
-  </tr>
+</div>
+
+---
+
+<div align="center">
+
+<!-- ══════════════════════════════════════════════════════
+     ONE-LINER STAT ROW
+══════════════════════════════════════════════════════ -->
+
+[![Profile Views](https://komarev.com/ghpvc/?username=Souvik444411&color=6366f1&style=flat-square&label=Profile+Views)](https://github.com/Souvik444411)&nbsp;&nbsp;
+[![GitHub followers](https://img.shields.io/github/followers/Souvik444411?style=flat-square&color=06b6d4&label=Followers)](https://github.com/Souvik444411?tab=followers)&nbsp;&nbsp;
+[![Repos](https://img.shields.io/badge/Repos-5-f43f5e?style=flat-square)](https://github.com/Souvik444411?tab=repositories)&nbsp;&nbsp;
+[![ML Accuracy](https://img.shields.io/badge/ML_Accuracy-99.73%25-22c55e?style=flat-square)](https://github.com/Souvik444411/SIGN-LANGUAGE-DEC)
+
+</div>
+
+<br/>
+
+<!-- ══════════════════════════════════════════════════════
+     ABOUT — Two-column: bio text + quick-info table
+══════════════════════════════════════════════════════ -->
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr valign="top">
+<td width="62%">
+
+### `who_am_i()`
+
+```python
+class Souvik:
+    location     = "Jaipur, India 🇮🇳"
+    university   = "UEM Jaipur — B.Tech CSE (AIML)"
+    focus        = ["Computer Vision", "AI Systems",
+                    "Web3 / Smart Contracts", "DSA"]
+    currently    = "Building SignGesture AI — 99.73% acc."
+    ask_me_about = ["Python", "OpenCV", "MediaPipe",
+                    "PyTorch", "Solidity", "React"]
+    fun_fact     = "I taught a machine to read sign language."
+```
+
+</td>
+<td width="4%"></td>
+<td width="34%">
+
+### `quick_links()`
+
+| | |
+|---|---|
+| 🎓 | B.Tech CSE (AIML) |
+| 📍 | Jaipur, Rajasthan |
+| 🤖 | AI + CV Systems |
+| 🔗 | [LinkedIn](https://linkedin.com/in/souvik444411) |
+| 💻 | [GitHub](https://github.com/Souvik444411) |
+| 📬 | Open to collaborate |
+
+</td>
+</tr>
 </table>
 
 <br/>
 
-<!-- ==================== SECTION: ABOUT ME ==================== -->
-<img src="assets/divider.svg" width="100%" alt="Neon Divider" />
+<!-- ══════════════════════════════════════════════════════
+     MARQUEE — Scrolling tech stack ticker
+══════════════════════════════════════════════════════ -->
 
-<h3><code>// ABOUT_ME</code></h3>
-
-<p align="center">
-  <b>I'm Souvik Chowdhury — B.Tech CSE (AIML) student at UEM Jaipur &amp; Full-Stack AI Engineer.</b><br/>
-  I engineer real-time assistive systems, deep learning computer vision pipelines, Web3 smart contracts, and high-performance software.<br/>
-  <i>This GitHub profile is my digital workspace &amp; neural laboratory — experiment, innovate, ship.</i>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Focus-Computer%20Vision-00f2fe?style=flat-square&logo=opencv&logoColor=white" alt="Computer Vision" />
-  <img src="https://img.shields.io/badge/Research-Deep%20Learning%20%26%20Assistive%20Tech-ff007f?style=flat-square&logo=pytorch&logoColor=white" alt="Deep Learning" />
-  <img src="https://img.shields.io/badge/Ecosystem-Full--Stack%20%26%20Web3-7928ca?style=flat-square&logo=ethereum&logoColor=white" alt="Web3 & Full Stack" />
-  <img src="https://img.shields.io/badge/Status-Building%20%26%20Shipping-38ef7d?style=flat-square&logo=rocket&logoColor=white" alt="Status Building" />
-</p>
+<div align="center">
+<img src="assets/marquee.svg" width="100%" alt="Tech Stack Ticker" />
+</div>
 
 <br/>
 
-<!-- ==================== SECTION: FEATURED PROJECTS ==================== -->
-<img src="assets/divider.svg" width="100%" alt="Neon Divider" />
+<!-- ══════════════════════════════════════════════════════
+     PROJECTS — Bento card grid
+══════════════════════════════════════════════════════ -->
 
-<h3><code>// FEATURED_PROJECTS</code></h3>
+<div align="center">
 
-<a href="https://github.com/Souvik444411?tab=repositories">
-  <img src="assets/projects.svg" width="100%" alt="Featured Projects Grid" />
-</a>
+## `projects.ls()`
 
-<br/><br/>
+<img src="assets/bento.svg" width="100%" alt="Project Bento Grid" />
 
-<!-- Detailed Project Showcase Table -->
-<table width="100%">
-  <thead>
-    <tr>
-      <th align="left">🚀 Project</th>
-      <th align="left">🧠 Core Tech</th>
-      <th align="left">⚡ Highlights</th>
-      <th align="center">🔗 Repository</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><b>🤟 SignGesture AI</b></td>
-      <td><code>Python</code> <code>MediaPipe</code> <code>OpenCV</code> <code>Scikit-learn</code></td>
-      <td>Two-way real-time assistive communication bridging deaf &amp; hearing users with <b>99.73% ML accuracy</b>, 21-landmark 3D skeleton tracking &amp; offline TTS.</td>
-      <td align="center"><a href="https://github.com/Souvik444411/SIGN-LANGUAGE-DEC"><b>View Code ↗</b></a></td>
-    </tr>
-    <tr>
-      <td><b>🔐 Decentralized KYC</b></td>
-      <td><code>Solidity</code> <code>Ethereum</code> <code>Web3.js</code> <code>Truffle</code></td>
-      <td>Tamper-proof identity verification eliminating centralized customer data vulnerabilities through immutable smart contracts.</td>
-      <td align="center"><a href="https://github.com/Souvik444411/Decentralized-KYC-blockchain"><b>View Code ↗</b></a></td>
-    </tr>
-    <tr>
-      <td><b>⚡ Algorithmic Mastery</b></td>
-      <td><code>C++</code> <code>Data Structures</code> <code>Graph Theory</code></td>
-      <td>Comprehensive solution repository conquering 160 days of rigorous algorithmic challenges, dynamic programming, and optimization.</td>
-      <td align="center"><a href="https://github.com/Souvik444411/GFC-160-Dayschallenge"><b>View Code ↗</b></a></td>
-    </tr>
-    <tr>
-      <td><b>🛒 Modern E-Commerce UI</b></td>
-      <td><code>JavaScript</code> <code>HTML5</code> <code>CSS3</code> <code>Responsive</code></td>
-      <td>High-fidelity e-commerce client architecture with responsive design, dynamic cart orchestration, and fluid micro-animations.</td>
-      <td align="center"><a href="https://github.com/Souvik444411/Amazon_frontend_code"><b>View Code ↗</b></a></td>
-    </tr>
-  </tbody>
+</div>
+
+<br/>
+
+<div align="center">
+
+| Project | Stack | Highlight | Link |
+|---|---|---|---|
+| 🤟 **SignGesture AI** | `Python` `OpenCV` `MediaPipe` `Scikit` | Two-way real-time ASL bridge with **99.73% ML accuracy**, offline TTS | [→ View](https://github.com/Souvik444411/SIGN-LANGUAGE-DEC) |
+| 🔐 **Decentralized KYC** | `Solidity` `Ethereum` `Web3.js` | Tamper-proof identity on-chain, eliminating single-point-of-failure | [→ View](https://github.com/Souvik444411/Decentralized-KYC-blockchain) |
+| ⚡ **GFG 160-Day DSA** | `C++` `Algorithms` | 160-day intensive challenge covering graphs, DP, trees, greedy | [→ View](https://github.com/Souvik444411/GFC-160-Dayschallenge) |
+| 🛒 **E-Commerce UI** | `JavaScript` `HTML` `CSS` | Amazon-style responsive storefront with dynamic cart logic | [→ View](https://github.com/Souvik444411/Amazon_frontend_code) |
+| 🪙 **NFT Manager** | `Clarity` `Smart Contracts` | NFT collection manager on the Stacks blockchain | [→ View](https://github.com/Souvik444411/NFT_Collection_Manager_Final) |
+
+</div>
+
+<br/>
+
+<!-- ══════════════════════════════════════════════════════
+     SKILLS — Animated bar graph + radar chart
+══════════════════════════════════════════════════════ -->
+
+<div align="center">
+
+## `skills.radar()`
+
+<img src="assets/skills.svg" width="100%" alt="Skills Radar and Bar Graph" />
+
+</div>
+
+<br/>
+
+<!-- ══════════════════════════════════════════════════════
+     TECH STACK ICONS — Skill Icons (bubble format)
+══════════════════════════════════════════════════════ -->
+
+<div align="center">
+
+### Languages & Tools
+
+<p>
+  <img src="https://skillicons.dev/icons?i=python,cpp,c,js,ts,solidity&theme=dark" alt="Languages" /><br/>
+  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,opencv,fastapi,react,nextjs,nodejs,express&theme=dark" alt="Frameworks" /><br/>
+  <img src="https://skillicons.dev/icons?i=postgres,mongodb,git,github,docker,linux,vscode&theme=dark" alt="Tools" />
+</p>
+
+</div>
+
+<br/>
+
+<!-- ══════════════════════════════════════════════════════
+     GITHUB STATS — Minimal dark cards row
+══════════════════════════════════════════════════════ -->
+
+<div align="center">
+
+## `stats.fetch()`
+
+<table border="0" cellpadding="0" cellspacing="8" width="100%">
+<tr>
+<td align="center" width="50%">
+  <img src="https://github-readme-stats.vercel.app/api?username=Souvik444411&show_icons=true&theme=transparent&hide_border=true&bg_color=030712&title_color=6366f1&text_color=94a3b8&icon_color=06b6d4&border_radius=12" width="100%" alt="GitHub Stats" />
+</td>
+<td align="center" width="50%">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Souvik444411&theme=transparent&hide_border=true&background=030712&stroke=6366f1&ring=06b6d4&fire=f43f5e&currStreakLabel=6366f1&sideLabels=94a3b8&dates=475569&border_radius=12" width="100%" alt="GitHub Streak" />
+</td>
+</tr>
+<tr>
+<td align="center" colspan="2">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Souvik444411&layout=compact&theme=transparent&hide_border=true&bg_color=030712&title_color=6366f1&text_color=94a3b8&border_radius=12&langs_count=8" alt="Top Languages" />
+</td>
+</tr>
 </table>
 
-<br/>
-
-<!-- ==================== SECTION: 3D TECH UNIVERSE ==================== -->
-<img src="assets/divider.svg" width="100%" alt="Neon Divider" />
-
-<h3><code>// 3D_TECH_UNIVERSE</code></h3>
-
-<img src="assets/tech-universe.svg" width="100%" alt="3D Orbiting Tech Universe" />
-
-<br/><br/>
-
-<!-- ==================== SECTION: SKILLS MATRIX & ECOSYSTEM ==================== -->
-<img src="assets/divider.svg" width="100%" alt="Neon Divider" />
-
-<h3><code>// SKILLS_MATRIX &amp; TOOLKIT</code></h3>
-
-<table width="100%">
-  <tr>
-    <td width="25%"><b>💻 Core Languages</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-      <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++" />
-      <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C" />
-      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-      <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
-      <img src="https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white" alt="Solidity" />
-      <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL" />
-    </td>
-  </tr>
-  <tr>
-    <td><b>🧠 AI &amp; Computer Vision</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV" />
-      <img src="https://img.shields.io/badge/MediaPipe-00C4B4?style=for-the-badge&logo=google&logoColor=white" alt="MediaPipe" />
-      <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
-      <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow" />
-      <img src="https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn" />
-      <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
-    </td>
-  </tr>
-  <tr>
-    <td><b>🌐 Full-Stack &amp; Web</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-      <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-      <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
-      <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
-      <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
-    </td>
-  </tr>
-  <tr>
-    <td><b>🗄️ Databases &amp; Cloud</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
-      <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-      <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
-      <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
-    </td>
-  </tr>
-  <tr>
-    <td><b>🛠️ Tools &amp; Workflow</b></td>
-    <td>
-      <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-      <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions" />
-      <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux" />
-      <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman" />
-      <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code" />
-    </td>
-  </tr>
-</table>
+</div>
 
 <br/>
 
-<!-- ==================== SECTION: GITHUB METRICS ==================== -->
-<img src="assets/divider.svg" width="100%" alt="Neon Divider" />
+<!-- ══════════════════════════════════════════════════════
+     CONTRIBUTION GRAPH — Github Readme Activity Graph
+══════════════════════════════════════════════════════ -->
 
-<h3><code>// GITHUB_TELEMETRY</code></h3>
+<div align="center">
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Souvik444411&show_icons=true&theme=tokyonight&hide_border=true&bg_color=080c16&title_color=00f2fe&text_color=94a3b8&icon_color=ff007f" height="165" alt="GitHub Stats" />
-  &nbsp;
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Souvik444411&theme=tokyonight&hide_border=true&background=080c16&stroke=00f2fe&ring=ff007f&fire=00ffcc&currStreakLabel=00f2fe" height="165" alt="GitHub Streak" />
-</p>
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Souvik444411&layout=compact&theme=tokyonight&hide_border=true&bg_color=080c16&title_color=00f2fe&text_color=94a3b8" height="135" alt="Top Languages" />
-</p>
+## `commits.timeline()`
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Souvik444411&bg_color=030712&color=6366f1&line=06b6d4&point=f43f5e&area=true&area_color=6366f1&hide_border=true&radius=12)](https://github.com/Souvik444411)
+
+</div>
 
 <br/>
 
-<!-- ==================== SECTION: CONTRIBUTION EXPEDITION ==================== -->
-<img src="assets/divider.svg" width="100%" alt="Neon Divider" />
+<!-- ══════════════════════════════════════════════════════
+     GITHUB TROPHIES
+══════════════════════════════════════════════════════ -->
 
-<h3><code>// CONTRIBUTION_EXPEDITION</code></h3>
+<div align="center">
 
-<img src="assets/pacman.svg" width="100%" alt="Contribution Maze Game" />
+## `trophies.display()`
 
-<br/><br/>
+[![Trophies](https://github-profile-trophy.vercel.app/?username=Souvik444411&theme=nord&no-frame=true&no-bg=true&margin-w=6&column=6)](https://github.com/Souvik444411)
 
-<!-- ==================== SECTION: CONNECT ==================== -->
-<img src="assets/divider.svg" width="100%" alt="Neon Divider" />
+</div>
 
-<h3><code>// CONNECT</code></h3>
+<br/>
 
-<p align="center">
-  <a href="https://linkedin.com/in/souvik444411" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/Souvik444411" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-  &nbsp;
-  <a href="mailto:souvikchowdhury@example.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/Souvik444411?tab=repositories" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio%20Projects-00f2fe?style=for-the-badge&logo=gitbook&logoColor=black" alt="Portfolio" />
+<!-- ══════════════════════════════════════════════════════
+     CONNECT
+══════════════════════════════════════════════════════ -->
+
+<div align="center">
+
+## `connect.init()`
+
+<p>
+  <a href="https://linkedin.com/in/souvik444411">
+    <img src="https://img.shields.io/badge/LinkedIn-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=030712" alt="LinkedIn"/>
+  </a>&nbsp;
+  <a href="https://github.com/Souvik444411">
+    <img src="https://img.shields.io/badge/GitHub-f1f5f9?style=for-the-badge&logo=github&logoColor=030712&labelColor=030712" alt="GitHub"/>
+  </a>&nbsp;
+  <a href="mailto:souvikchowdhury@example.com">
+    <img src="https://img.shields.io/badge/Email-f43f5e?style=for-the-badge&logo=gmail&logoColor=white&labelColor=030712" alt="Email"/>
   </a>
 </p>
 
 <br/>
 
-<!-- ==================== FOOTER WAVE ==================== -->
-<img src="assets/footer.svg" width="100%" alt="Footer Wave - Thanks for Visiting" />
+<!-- ══════════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════════ -->
+
+<img src="assets/footer2.svg" width="100%" alt="Footer" />
+
+<br/>
+
+<sub>
+  <code>// Last updated · November 2024 · Jaipur, India</code>
+</sub>
 
 </div>
