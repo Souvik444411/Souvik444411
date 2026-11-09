@@ -1,147 +1,188 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 300" width="880" height="300">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#030712"/>
-      <stop offset="100%" stop-color="#070d1a"/>
+      <stop offset="0%" stop-color="#020409"/>
+      <stop offset="100%" stop-color="#06091a"/>
     </linearGradient>
-
-    <!-- Bar fill gradients per category -->
-    <linearGradient id="barAI"  x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Bar fill gradients -->
+    <linearGradient id="b1" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#6366f1"/>
       <stop offset="100%" stop-color="#818cf8"/>
     </linearGradient>
-    <linearGradient id="barCV"  x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="b2" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#06b6d4"/>
       <stop offset="100%" stop-color="#22d3ee"/>
     </linearGradient>
-    <linearGradient id="barWeb" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="b3" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#f43f5e"/>
       <stop offset="100%" stop-color="#fb7185"/>
     </linearGradient>
-    <linearGradient id="barWeb3" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="b4" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#f59e0b"/>
       <stop offset="100%" stop-color="#fbbf24"/>
     </linearGradient>
-    <linearGradient id="barAlgo" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="b5" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#22c55e"/>
       <stop offset="100%" stop-color="#4ade80"/>
     </linearGradient>
+    <!-- Shimmer for bars -->
+    <linearGradient id="barShimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-1 0" to="1 0" dur="2.5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <!-- Subtle glow behind metrics -->
+    <radialGradient id="ringGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
   </defs>
 
   <style>
-    @keyframes growBar {
-      from { width: 0; }
-      to   { width: var(--w); }
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateX(-12px); }
+      to   { opacity: 1; transform: translateX(0); }
     }
     @keyframes fadeIn {
-      from { opacity:0; }
-      to   { opacity:1; }
+      from { opacity: 0; }
+      to   { opacity: 1; }
     }
-    .label { animation: fadeIn 0.5s ease both; }
-    .bar-ai   { animation: growBar 1.4s cubic-bezier(.16,1,.3,1) 0.2s both; --w: 86%; width: 86%; }
-    .bar-cv   { animation: growBar 1.4s cubic-bezier(.16,1,.3,1) 0.4s both; --w: 92%; width: 92%; }
-    .bar-web  { animation: growBar 1.4s cubic-bezier(.16,1,.3,1) 0.6s both; --w: 78%; width: 78%; }
-    .bar-web3 { animation: growBar 1.4s cubic-bezier(.16,1,.3,1) 0.8s both; --w: 70%; width: 70%; }
-    .bar-algo { animation: growBar 1.4s cubic-bezier(.16,1,.3,1) 1.0s both; --w: 80%; width: 80%; }
+    .r0 { animation: fadeSlide 0.5s ease 0.1s both; }
+    .r1 { animation: fadeSlide 0.5s ease 0.25s both; }
+    .r2 { animation: fadeSlide 0.5s ease 0.4s both; }
+    .r3 { animation: fadeSlide 0.5s ease 0.55s both; }
+    .r4 { animation: fadeSlide 0.5s ease 0.7s both; }
+    .mHeader { animation: fadeIn 0.6s ease 0.4s both; }
+    .ring1 { animation: fadeIn 0.6s ease 0.6s both; }
+    .ring2 { animation: fadeIn 0.6s ease 0.8s both; }
+    .ring3 { animation: fadeIn 0.6s ease 1.0s both; }
   </style>
 
-  <rect width="900" height="300" fill="url(#bg)"/>
+  <rect width="880" height="300" fill="url(#bg)"/>
 
-  <!-- Section header -->
-  <text x="40" y="44" font-family="'JetBrains Mono',monospace" font-size="11" font-weight="600" fill="#374151" letter-spacing="2">// SKILLS_RADAR</text>
-  <line x1="40" y1="54" x2="860" y2="54" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.06"/>
+  <!-- Left Header -->
+  <text x="24" y="34" font-family="Courier New,Courier,monospace" font-size="11" fill="#475569" letter-spacing="2">// CORE_DOMAINS</text>
+  <line x1="24" y1="44" x2="440" y2="44" stroke="#1e293b" stroke-width="1"/>
 
-  <!-- ═══ LEFT — Skill Level Bars ═══ -->
-  <g transform="translate(40, 72)" font-family="'Inter','Segoe UI',sans-serif">
+  <!-- Right Header -->
+  <text x="670" y="34" text-anchor="middle" font-family="Courier New,Courier,monospace" font-size="11" fill="#475569" letter-spacing="2">// LIVE_BENCHMARKS</text>
+  <line x1="500" y1="44" x2="840" y2="44" stroke="#1e293b" stroke-width="1"/>
 
-    <!-- ROW: AI & Machine Learning -->
-    <g transform="translate(0,0)" class="label" style="animation-delay:0.1s">
-      <text y="13" font-size="12" fill="#c7d2fe" font-weight="600">AI &amp; Machine Learning</text>
-      <text x="390" y="13" text-anchor="end" font-size="11" fill="#6366f1" font-family="'JetBrains Mono',monospace">86%</text>
-      <rect x="0" y="20" width="390" height="7" rx="3.5" fill="#ffffff" fill-opacity="0.04"/>
-      <rect class="bar-ai" x="0" y="20" height="7" rx="3.5" fill="url(#barAI)"/>
-      <text x="410" y="29" font-size="10.5" fill="#475569" font-family="'JetBrains Mono',monospace">PyTorch · TensorFlow · Scikit-learn</text>
-    </g>
+  <!-- Vertical separator -->
+  <line x1="470" y1="20" x2="470" y2="280" stroke="#1e293b" stroke-width="1" stroke-dasharray="4,6" opacity="0.6"/>
 
-    <!-- ROW: Computer Vision -->
-    <g transform="translate(0,52)" class="label" style="animation-delay:0.2s">
-      <text y="13" font-size="12" fill="#67e8f9" font-weight="600">Computer Vision</text>
-      <text x="390" y="13" text-anchor="end" font-size="11" fill="#06b6d4" font-family="'JetBrains Mono',monospace">92%</text>
-      <rect x="0" y="20" width="390" height="7" rx="3.5" fill="#ffffff" fill-opacity="0.04"/>
-      <rect class="bar-cv" x="0" y="20" height="7" rx="3.5" fill="url(#barCV)"/>
-      <text x="410" y="29" font-size="10.5" fill="#475569" font-family="'JetBrains Mono',monospace">OpenCV · MediaPipe · YOLO</text>
-    </g>
+  <!-- ══════════════════════════════════════════════
+       LEFT SIDE: SKILL PROGRESS BARS (x=24 to x=440)
+  ══════════════════════════════════════════════ -->
 
-    <!-- ROW: Full-Stack Web -->
-    <g transform="translate(0,104)" class="label" style="animation-delay:0.3s">
-      <text y="13" font-size="12" fill="#fda4af" font-weight="600">Full-Stack Web Dev</text>
-      <text x="390" y="13" text-anchor="end" font-size="11" fill="#f43f5e" font-family="'JetBrains Mono',monospace">78%</text>
-      <rect x="0" y="20" width="390" height="7" rx="3.5" fill="#ffffff" fill-opacity="0.04"/>
-      <rect class="bar-web" x="0" y="20" height="7" rx="3.5" fill="url(#barWeb)"/>
-      <text x="410" y="29" font-size="10.5" fill="#475569" font-family="'JetBrains Mono',monospace">React · Next.js · FastAPI · Node</text>
-    </g>
-
-    <!-- ROW: Web3 / Blockchain -->
-    <g transform="translate(0,156)" class="label" style="animation-delay:0.4s">
-      <text y="13" font-size="12" fill="#fde68a" font-weight="600">Web3 &amp; Blockchain</text>
-      <text x="390" y="13" text-anchor="end" font-size="11" fill="#f59e0b" font-family="'JetBrains Mono',monospace">70%</text>
-      <rect x="0" y="20" width="390" height="7" rx="3.5" fill="#ffffff" fill-opacity="0.04"/>
-      <rect class="bar-web3" x="0" y="20" height="7" rx="3.5" fill="url(#barWeb3)"/>
-      <text x="410" y="29" font-size="10.5" fill="#475569" font-family="'JetBrains Mono',monospace">Solidity · Ethereum · Truffle</text>
-    </g>
-
-    <!-- ROW: Algorithms & DSA -->
-    <g transform="translate(0,208)" class="label" style="animation-delay:0.5s">
-      <text y="13" font-size="12" fill="#86efac" font-weight="600">Algorithms &amp; DSA</text>
-      <text x="390" y="13" text-anchor="end" font-size="11" fill="#22c55e" font-family="'JetBrains Mono',monospace">80%</text>
-      <rect x="0" y="20" width="390" height="7" rx="3.5" fill="#ffffff" fill-opacity="0.04"/>
-      <rect class="bar-algo" x="0" y="20" height="7" rx="3.5" fill="url(#barAlgo)"/>
-      <text x="410" y="29" font-size="10.5" fill="#475569" font-family="'JetBrains Mono',monospace">C++ · Graph Theory · DP</text>
-    </g>
+  <!-- ROW 0: AI & Machine Learning — 86% = 350px -->
+  <g class="r0">
+    <text x="24" y="75" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#c7d2fe">AI &amp; Machine Learning</text>
+    <text x="440" y="75" text-anchor="end" font-family="Courier New,Courier,monospace" font-size="10.5" font-weight="700" fill="#818cf8">86%</text>
+    <rect x="24" y="83" width="416" height="7" rx="3.5" fill="#1e293b"/>
+    <rect x="24" y="83" width="358" height="7" rx="3.5" fill="url(#b1)">
+      <animate attributeName="width" from="0" to="358" dur="1.2s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+    </rect>
+    <rect x="24" y="83" width="358" height="7" rx="3.5" fill="url(#barShimmer)"/>
+    <text x="24" y="103" font-family="Courier New,Courier,monospace" font-size="9" fill="#475569">PyTorch · TensorFlow · Scikit-Learn · NumPy</text>
   </g>
 
-  <!-- ═══ RIGHT — Circular radar chart (pure SVG/CSS) ═══ -->
-  <g transform="translate(760, 155)">
-    <!-- Background rings -->
-    <circle cx="0" cy="0" r="90" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.05"/>
-    <circle cx="0" cy="0" r="68" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.05"/>
-    <circle cx="0" cy="0" r="46" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.05"/>
-    <circle cx="0" cy="0" r="24" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.05"/>
+  <!-- ROW 1: Computer Vision — 92% = 382px -->
+  <g class="r1">
+    <text x="24" y="122" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#67e8f9">Computer Vision</text>
+    <text x="440" y="122" text-anchor="end" font-family="Courier New,Courier,monospace" font-size="10.5" font-weight="700" fill="#06b6d4">92%</text>
+    <rect x="24" y="130" width="416" height="7" rx="3.5" fill="#1e293b"/>
+    <rect x="24" y="130" width="382" height="7" rx="3.5" fill="url(#b2)">
+      <animate attributeName="width" from="0" to="382" dur="1.2s" begin="0.45s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+    </rect>
+    <rect x="24" y="130" width="382" height="7" rx="3.5" fill="url(#barShimmer)"/>
+    <text x="24" y="150" font-family="Courier New,Courier,monospace" font-size="9" fill="#475569">OpenCV · MediaPipe · YOLO · 21-Landmark Tracking</text>
+  </g>
 
-    <!-- Axis lines (5 axes for 5 skills) -->
-    <!-- AI: top -->
-    <line x1="0" y1="0" x2="0"    y2="-90" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.08"/>
-    <!-- CV: upper-right -->
-    <line x1="0" y1="0" x2="85"   y2="-28" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.08"/>
-    <!-- Web: lower-right -->
-    <line x1="0" y1="0" x2="53"   y2="73"  stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.08"/>
-    <!-- Web3: lower-left -->
-    <line x1="0" y1="0" x2="-53"  y2="73"  stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.08"/>
-    <!-- Algo: upper-left -->
-    <line x1="0" y1="0" x2="-85"  y2="-28" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.08"/>
+  <!-- ROW 2: Full-Stack Web Dev — 78% = 324px -->
+  <g class="r2">
+    <text x="24" y="169" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#fda4af">Full-Stack Web Dev</text>
+    <text x="440" y="169" text-anchor="end" font-family="Courier New,Courier,monospace" font-size="10.5" font-weight="700" fill="#f43f5e">78%</text>
+    <rect x="24" y="177" width="416" height="7" rx="3.5" fill="#1e293b"/>
+    <rect x="24" y="177" width="324" height="7" rx="3.5" fill="url(#b3)">
+      <animate attributeName="width" from="0" to="324" dur="1.2s" begin="0.6s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+    </rect>
+    <rect x="24" y="177" width="324" height="7" rx="3.5" fill="url(#barShimmer)"/>
+    <text x="24" y="197" font-family="Courier New,Courier,monospace" font-size="9" fill="#475569">React · Next.js · FastAPI · Node.js · Tailwind</text>
+  </g>
 
-    <!-- Radar polygon: values AI=86 CV=92 Web=78 Web3=70 Algo=80 scaled/90 -->
-    <!-- Points (each axis * percentage, polar coords):
-      AI   top     : (0, -90*0.86)         = (0, -77.4)
-      CV   upper-R : (90*0.86*sin72°, -90*0.92*cos72°) ≈ (74.5, -25.6)
-      Web  lower-R : (90*0.78*sin144°, -90*0.78*cos144°) ≈ (41.3, 56.9)
-      Web3 lower-L : (-90*0.70*sin144°, -90*0.70*cos144°) ≈ (-37.1, 51.1)
-      Algo upper-L : (-90*0.80*sin72°, -90*0.80*cos72°) ≈ (-68.6, -22.3)
-    -->
-    <polygon
-      points="0,-77.4  74.5,-25.6  41.3,56.9  -37.1,51.1  -68.6,-22.3"
-      fill="#6366f1"
-      fill-opacity="0.15"
-      stroke="#818cf8"
-      stroke-width="1.5"
-      stroke-opacity="0.7"
-    />
+  <!-- ROW 3: Web3 & Blockchain — 70% = 291px -->
+  <g class="r3">
+    <text x="24" y="216" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#fde68a">Web3 &amp; Blockchain</text>
+    <text x="440" y="216" text-anchor="end" font-family="Courier New,Courier,monospace" font-size="10.5" font-weight="700" fill="#f59e0b">70%</text>
+    <rect x="24" y="224" width="416" height="7" rx="3.5" fill="#1e293b"/>
+    <rect x="24" y="224" width="291" height="7" rx="3.5" fill="url(#b4)">
+      <animate attributeName="width" from="0" to="291" dur="1.2s" begin="0.75s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+    </rect>
+    <rect x="24" y="224" width="291" height="7" rx="3.5" fill="url(#barShimmer)"/>
+    <text x="24" y="244" font-family="Courier New,Courier,monospace" font-size="9" fill="#475569">Solidity · Ethereum · Truffle · Clarity (Stacks)</text>
+  </g>
 
-    <!-- Axis labels -->
-    <text x="0"   y="-96"  text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="9" fill="#c7d2fe">AI/ML</text>
-    <text x="96"  y="-24"  text-anchor="start"  font-family="'JetBrains Mono',monospace" font-size="9" fill="#67e8f9">CV</text>
-    <text x="60"  y="84"   text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="9" fill="#fda4af">Web</text>
-    <text x="-60" y="84"   text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="9" fill="#fde68a">Web3</text>
-    <text x="-96" y="-24"  text-anchor="end"    font-family="'JetBrains Mono',monospace" font-size="9" fill="#86efac">Algo</text>
+  <!-- ROW 4: Algorithms & DSA — 82% = 341px -->
+  <g class="r4">
+    <text x="24" y="263" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" font-weight="600" fill="#86efac">Algorithms &amp; DSA</text>
+    <text x="440" y="263" text-anchor="end" font-family="Courier New,Courier,monospace" font-size="10.5" font-weight="700" fill="#22c55e">82%</text>
+    <rect x="24" y="271" width="416" height="7" rx="3.5" fill="#1e293b"/>
+    <rect x="24" y="271" width="341" height="7" rx="3.5" fill="url(#b5)">
+      <animate attributeName="width" from="0" to="341" dur="1.2s" begin="0.9s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+    </rect>
+    <rect x="24" y="271" width="341" height="7" rx="3.5" fill="url(#barShimmer)"/>
+    <text x="24" y="291" font-family="Courier New,Courier,monospace" font-size="9" fill="#475569">C++ · Graph Theory · Dynamic Programming · Trees</text>
+  </g>
+
+  <!-- ══════════════════════════════════════════════
+       RIGHT SIDE: 3 RADIAL METRICS (cx = 545, 670, 795)
+  ══════════════════════════════════════════════ -->
+  <circle cx="670" cy="155" r="140" fill="url(#ringGlow)"/>
+
+  <!-- Ring 1: ML Accuracy (cx=550, cy=155) -->
+  <g class="ring1" transform="translate(550, 150)">
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#1e293b" stroke-width="7"/>
+    <!-- Circumference = 2 * PI * 42 = 263.89; 99.73% = 263.2 -->
+    <circle cx="0" cy="0" r="42" fill="none" stroke="url(#b1)" stroke-width="7"
+            stroke-dasharray="263.2 263.9" stroke-linecap="round"
+            transform="rotate(-90)">
+      <animate attributeName="stroke-dasharray" from="0 263.9" to="263.2 263.9" dur="1.8s" begin="0.8s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+    </circle>
+    <text x="0" y="-4" text-anchor="middle" font-family="-apple-system,Segoe UI,sans-serif" font-size="14" font-weight="800" fill="#c7d2fe">99.7%</text>
+    <text x="0" y="14" text-anchor="middle" font-family="Courier New,Courier,monospace" font-size="9" fill="#64748b">ML ACCURACY</text>
+    <text x="0" y="70" text-anchor="middle" font-family="-apple-system,Segoe UI,sans-serif" font-size="11" font-weight="600" fill="#94a3b8">SignGesture AI</text>
+    <text x="0" y="85" text-anchor="middle" font-family="Courier New,Courier,monospace" font-size="9" fill="#475569">ASL Detection</text>
+  </g>
+
+  <!-- Ring 2: DSA Challenge (cx=670, cy=150) -->
+  <g class="ring2" transform="translate(670, 150)">
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#1e293b" stroke-width="7"/>
+    <!-- 100% complete = 263.9 -->
+    <circle cx="0" cy="0" r="42" fill="none" stroke="url(#b5)" stroke-width="7"
+            stroke-dasharray="263.9 263.9" stroke-linecap="round"
+            transform="rotate(-90)">
+      <animate attributeName="stroke-dasharray" from="0 263.9" to="263.9 263.9" dur="1.6s" begin="1.0s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+    </circle>
+    <text x="0" y="-4" text-anchor="middle" font-family="-apple-system,Segoe UI,sans-serif" font-size="15" font-weight="800" fill="#86efac">160d</text>
+    <text x="0" y="14" text-anchor="middle" font-family="Courier New,Courier,monospace" font-size="9" fill="#64748b">STREAK</text>
+    <text x="0" y="70" text-anchor="middle" font-family="-apple-system,Segoe UI,sans-serif" font-size="11" font-weight="600" fill="#94a3b8">GFG Challenge</text>
+    <text x="0" y="85" text-anchor="middle" font-family="Courier New,Courier,monospace" font-size="9" fill="#475569">C++ Algorithms</text>
+  </g>
+
+  <!-- Ring 3: Computer Vision (cx=790, cy=150) -->
+  <g class="ring3" transform="translate(790, 150)">
+    <circle cx="0" cy="0" r="42" fill="none" stroke="#1e293b" stroke-width="7"/>
+    <!-- 92% = 242.8 -->
+    <circle cx="0" cy="0" r="42" fill="none" stroke="url(#b2)" stroke-width="7"
+            stroke-dasharray="242.8 263.9" stroke-linecap="round"
+            transform="rotate(-90)">
+      <animate attributeName="stroke-dasharray" from="0 263.9" to="242.8 263.9" dur="1.5s" begin="1.2s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+    </circle>
+    <text x="0" y="-4" text-anchor="middle" font-family="-apple-system,Segoe UI,sans-serif" font-size="14" font-weight="800" fill="#67e8f9">92%</text>
+    <text x="0" y="14" text-anchor="middle" font-family="Courier New,Courier,monospace" font-size="9" fill="#64748b">CONFIDENCE</text>
+    <text x="0" y="70" text-anchor="middle" font-family="-apple-system,Segoe UI,sans-serif" font-size="11" font-weight="600" fill="#94a3b8">MediaPipe / CV</text>
+    <text x="0" y="85" text-anchor="middle" font-family="Courier New,Courier,monospace" font-size="9" fill="#475569">Real-time Stream</text>
   </g>
 </svg>
